@@ -17,3 +17,14 @@ WORKDIR /var/www/html
  
 # Copy the PHP code file in /app into the container at /var/www/html
 COPY ./html .
+
+#------------------NUEVO----------------
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Install project dependencies
+RUN composer install --no-dev --prefer-dist --optimize-autoloader || true
+
+# Expose port 80
+EXPOSE 80
