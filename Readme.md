@@ -52,16 +52,3 @@ docker build --tag $(minikube ip):5000/php-webserver .
 kubectl apply -k ./
 minikube service "servicios" (Creas los servicio)
 ```
-
-<h2>Configuración de la Base de Datos</h2>
-Crea la tabla necesaria en la base de datos en PhpMySQL usando el siguiente SQL:
-
-```plaintext
-CREATE TABLE IF NOT EXISTS form_data (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    message TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```

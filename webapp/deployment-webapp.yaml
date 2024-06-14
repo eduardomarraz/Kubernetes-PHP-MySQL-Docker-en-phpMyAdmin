@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: php-webserver
-        image: 192.168.49.2:5000/php-webserver:latest
+        image: 172.19.181.24:5000/php-webserver:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80

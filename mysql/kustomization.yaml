@@ -3,3 +3,4 @@ resources:
   - pv-mysql.yaml
   - pvc-mysql.yaml
   - service-mysql.yaml
+  - mysqlconfigmap.yaml
