@@ -12,6 +12,7 @@ Este proyecto muestra cómo desplegar una aplicación PHP con MySQL en Kubernete
 |-- mysql
 |   |-- deployment-mysql.yaml
 |   |-- kustomization.yaml
+|   |-- mysqlconfigmap.yaml
 |   |-- pv-mysql.yaml
 |   |-- pvc-mysql.yaml
 |   `-- service-mysql.yaml
@@ -29,6 +30,9 @@ Este proyecto muestra cómo desplegar una aplicación PHP con MySQL en Kubernete
     |       `-- autoload.php
     |-- kustomization.yaml
     `-- service-webapp.yaml
+
+5 directories, 19 files
+
 
 ```
 
