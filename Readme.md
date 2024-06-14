@@ -60,9 +60,3 @@ kubectl get pods --namespace webapp-namespace
 minikube service phpmyadmin -n mysql-namespace
 minikube service php-webserver -n webapp-namespace
 ```
-
-```plaintext
-Usar estos comandos cuando tienes
-kubectl get pods --namespace mysql-namespace
-minikube service php-webserver -n webapp-namespace
-```
