@@ -1,15 +1,14 @@
 <?php
 require 'vendor/autoload.php';
  
- 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
         // Insertar datos del formulario en la base de datos MySQL
-        $mysqli = new mysqli(
-            getenv('MYSQL_HOST'),
+        $mysqli = new mysqli( 
+            'mysql.mysql-namespace.svc.cluster.local',
             getenv('MYSQL_USER'),
             getenv('MYSQL_PASSWORD'),
             getenv('MYSQL_DATABASE')

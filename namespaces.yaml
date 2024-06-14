@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webapp-namespace
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mysql-namespace

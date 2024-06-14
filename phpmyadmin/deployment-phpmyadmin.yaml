@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: phpmyadmin
+  namespace: mysql-namespace
 spec:
   selector:
     matchLabels:
