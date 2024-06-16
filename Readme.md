@@ -113,21 +113,21 @@ kubectl apply -k .
 ##### MySQL
   
   ```bash
-  cd ../MySQL
+  cd ../mysql
   kubectl apply -k .
   ```
 
   ##### phpMyAdmin
   
   ```bash
-  cd ../phpMyAdmin
+  cd ../phpmyadmin
   kubectl apply -k .
   ```
 
   ##### webApp
   
   ```bash
-  cd ../webApp
+  cd ../webapp
   kubectl apply -k .
   ```
 
